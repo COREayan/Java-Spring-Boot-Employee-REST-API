@@ -1,4 +1,4 @@
-package com.luv2code.springboot.cruddemo.enitity;
+package com.ayan.crudDemo.enitity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,7 +10,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="employee")
 public class Employee {
-    
     // define fields
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -75,6 +74,4 @@ public class Employee {
         return "Employee [id=" + id + ", first_name=" + first_name + ", last_name=" + last_name + ", email=" + email
                 + "]";
     }
-
-    
 }

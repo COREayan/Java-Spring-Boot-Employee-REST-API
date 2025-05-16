@@ -1,30 +1,22 @@
-package com.luv2code.springboot.cruddemo.rest;
+package com.ayan.crudDemo.rest;
+
+import com.ayan.crudDemo.enitity.Employee;
+import com.ayan.crudDemo.service.EmployeeService;
+
+import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import com.luv2code.springboot.cruddemo.dao.EmployeeDAO;
-import com.luv2code.springboot.cruddemo.enitity.Employee;
-import com.luv2code.springboot.cruddemo.service.EmployeeService;
-
-import java.util.List;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
 
-
-
-
-
-
 @RestController
 @RequestMapping("/api")
 public class EmployeeRestController {
-
     private EmployeeService employeeService;
 
     public EmployeeRestController(EmployeeService theEmployeeService) {
@@ -43,7 +35,6 @@ public class EmployeeRestController {
         if (theEmployee == null) {
             throw new RuntimeException("Employee id not found - " + employeeId);
         }
-
         return theEmployee;
     }
     
@@ -70,7 +61,6 @@ public class EmployeeRestController {
         }
 
         employeeService.deleteById(employeeId);
-
         return "Deleted employee id - " + employeeId;
     }
 }

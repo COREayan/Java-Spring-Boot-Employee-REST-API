@@ -1,16 +1,16 @@
-package com.luv2code.springboot.cruddemo.service;
+package com.ayan.crudDemo.dao;
 
 import java.util.List;
 
-import com.luv2code.springboot.cruddemo.enitity.Employee;
+import com.ayan.crudDemo.enitity.Employee;
 
-public interface EmployeeService {
+public interface EmployeeDAO {
     
     List<Employee> findAll();
-    
+
     Employee findById(int theId);
 
     Employee save(Employee theEmployee);
-    
+
     void deleteById(int theId);
 }

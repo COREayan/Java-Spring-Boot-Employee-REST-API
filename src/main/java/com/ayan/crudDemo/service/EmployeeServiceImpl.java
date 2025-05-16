@@ -1,12 +1,12 @@
-package com.luv2code.springboot.cruddemo.service;
+package com.ayan.crudDemo.service;
 
 import java.util.List;
 
+import com.ayan.crudDemo.enitity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.luv2code.springboot.cruddemo.dao.EmployeeDAO;
-import com.luv2code.springboot.cruddemo.enitity.Employee;
+import com.ayan.crudDemo.dao.EmployeeDAO;
 
 import jakarta.transaction.Transactional;
 
