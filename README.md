@@ -18,5 +18,5 @@ Well-structured with best practices using Spring Boot annotations
 - Spring Boot
 - Spring Web
 - Spring Data JPA
-- H2 Database
+- MySQL
 - Maven
