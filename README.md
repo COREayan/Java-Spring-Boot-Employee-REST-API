@@ -9,7 +9,7 @@ This is a simple Spring Boot project that implements basic CRUD (Create, Read, U
 - Update employee details
 - Delete an employee
 - RESTful API architecture
-- In-memory H2 database (can be easily switched to MySQL/PostgreSQL)
+- MySQL Database
 
 Well-structured with best practices using Spring Boot annotations
 
