@@ -39,7 +39,9 @@ Flow of the Program
 
 3.Initially, the table is blank.
 
-![img.png](Images_For_README/img_2.png)
+![img.png](Images_For_README/img_2.png) 
+
+
 4. Hitting the GET <code>http://localhost:8080/api/employees</code> API using Postman.
 ![img.png](Images_For_README/img_3.png)
 blank JSON response.
